@@ -1,0 +1,108 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Corpo do documento */
+body {
+    background: linear-gradient(135deg, #f0f0f5, #d9d9e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container da calculadora */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #1c1c1e;
+}
+
+/* Grupo de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #636366;
+}
+
+/* Campos de entrada */
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #d1d1d6;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #1c1c1e;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007aff;
+}
+
+/* Botão */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007aff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 10px rgba(0, 122, 255, 0.3);
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1c1c1e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
