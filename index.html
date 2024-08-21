@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Contêiner principal da calculadora -->
     <div class="container">
+        <!-- Título da calculadora -->
         <h1>Calculadora de IMC</h1>
+        <!-- Formulário para calcular o IMC -->
         <form id="imc-form">
             <div class="input-group">
                 <label for="peso">Peso (kg):</label>
@@ -39,10 +42,29 @@
                     <option value="very_active">Muito Ativo</option>
                 </select>
             </div>
+            <!-- Botão para calcular o IMC -->
             <button type="submit" class="btn">Calcular IMC</button>
         </form>
         <div id="resultado" class="resultado"></div>
+
+        <!-- Contêiner do toggle para o modo escuro -->
+        <div class="dark-mode-toggle">
+            <h4>Dark Mode</h4>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>        
     </div>
+
+    <!-- Modal que exibe o resultado -->
+    <div id="resultadoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="resultado-text"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
